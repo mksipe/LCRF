@@ -3,7 +3,7 @@
 #             Reference Material                #
 #                                               #
 #################################################
-#   Last Updated on 6/24/18                     #
+#   Last Updated on 4/10/19                     #
 #   Created by Mksipe                           #
 ###################################################################################################
 #                                               #                                                 #
@@ -137,6 +137,24 @@
 # session required /lib/security/pam_deny.so
 # session required /lib/security/pam_warn.so
 #
+#################################################
+#                                               #
+#               /etc/pam.d/sshd                 # 
+#                                               #
+#################################################
+#
+# Modified File 
+# _______________
+# 
+# ( To deny access ) 
+# auth required pam_listfile.so item=user sense=deny file=/etc/sshd/sshd.deny 
+# onerr=succeed
+#
+# ( To allow access )
+# auth required pam_listfile.so item=user sense=allow file=/etc/sshd/sshd.allow 
+# onerr=fail
+#
+# 
 #################################################
 #                                               #
 #          Other Reference Materials            # 
