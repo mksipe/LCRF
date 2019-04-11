@@ -3,7 +3,7 @@
 #             Reference Material                #
 #                                               #
 #################################################
-#   Last Updated on 6/24/18                     #
+#   Last Updated on 4/10/19                     #
 #   Created by Mksipe                           #
 ###################################################################################################
 #                                               #                                                 #
@@ -59,7 +59,9 @@
 # Protocol 2                                                                                      #
 # LoginGraceTime 3m                                                                               #
 # (not Required but is recommended to help retain port guessing) Port <anything but 22>           #
-#                                                                                                 #
+# ClientAliveInterval 300                                                                         #
+# ClientAliveCountMax 2                                                                           #
+# AllowUsers : (users)                                                                            #
 #################################################                                                 #
 #                                               #                                                 #
 #                     EOF                       #                                                 #
